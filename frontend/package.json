@@ -1,5 +1,5 @@
 {
-  "name": "atelier-frontend",
+  "name": "agentrewind-frontend",
   "private": true,
   "scripts": {
     "test": "node scripts/verify_ui.js"
