@@ -22,7 +22,8 @@ def replay_fixtures(fixtures: Path) -> None:
         raise typer.Exit(code=1)
     ids = changed_ids(payload)
     typer.echo(f"changed={len(ids)}")
-    raise typer.Exit(code=1 if ids else 0)
+    if ids:
+        raise typer.Exit(code=1)
 
 
 if __name__ == "__main__":
